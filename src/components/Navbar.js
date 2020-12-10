@@ -4,7 +4,7 @@ class Navbar extends React.Component {
   render () {
     return (
       <div>
-        fk
+        [placeholder nav]
       </div>
     )
   }
