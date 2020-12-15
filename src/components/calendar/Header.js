@@ -13,25 +13,25 @@ function Header(props) {
 
   return (
     <div style={headingStyle}>
-      <span 
+
+      <span
         onClick={() => props.clickHandler(-1)}
-        style={ {float: "left"} }
         className="button"
       >
-        left
+        {"<"}
+      </span>
+      <span
+        onClick={() => props.clickHandler(1)}
+        className="button"
+      >
+        {">"}
       </span>
 
       <span style={infoStyle}>{props.data.date.toLocaleTimeString()}</span>
       <span style={infoStyle}>M: {props.data.currMonth + 1}</span>
       <span style={infoStyle}>{props.data.currYear}</span>
 
-      <span 
-        onClick={() => props.clickHandler(1)}
-        className="button"
-        style={ {float: "right"} }
-      >
-        right
-      </span>
+
     </div>
   );
 }

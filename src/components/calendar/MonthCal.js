@@ -4,7 +4,7 @@ import CalDay from "./Day";
 import CalHeader from "./ColumnTitle";
 import Header from "./Header";
 
-class CalComponent extends React.Component {
+class MonthCal extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -105,4 +105,4 @@ class CalComponent extends React.Component {
   }
 }
 
-export default CalComponent;
+export default MonthCal;
